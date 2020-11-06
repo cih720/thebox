@@ -16,5 +16,5 @@ if [ "$want" = "y" ]; then
     fi
     ./box.py | lolcat
 else
-    ./box.py | lolcat
+    ./box.py
 fi
