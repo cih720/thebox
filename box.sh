@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 ###############################################
 # File Name: box.sh
-# Author: Rocket
+# Author: cih720
 # Mail: 2453530993@qq.com
 # Created Time: 2020-10-03 12:48:00
 ###############################################
@@ -14,4 +14,4 @@ if [ $? -ne 0 ]; then
     apt install lolcat -y
 fi
 
-/root/Box/box.py | lolcat
+~/Box/box.py | lolcat
