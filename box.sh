@@ -8,4 +8,10 @@
 ###############################################
 
 
+dpkg -s lolcat &> /dev/null
+if [ $? -ne 0 ]; then
+    echo -e "检测到未安装 lolcat\n正在为您安装 lolcat"
+    apt install lolcat -y
+fi
+
 /root/Box/box.py | lolcat
