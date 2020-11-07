@@ -174,7 +174,7 @@ class Calculator(object):
         while True:
             problem = input("输入要计算的算术题: ")
             result = eval(problem)
-            print("%s = %s" % (problem, result))
+            print("%s=%s" % (problem, result))
 
             want = input("你想要继续计算吗? (y/n): ")
             if want == "n":

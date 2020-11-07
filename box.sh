@@ -7,7 +7,8 @@
 # Created Time: 2020-10-03 12:48:00
 ###############################################
 
-read -n 1 -p "是否需要彩色输出 (y/n): " want
+
+read -p "是否需要彩色输出 (y/n): " want
 if [ "$want" = "y" ]; then
     dpkg -s lolcat &> /dev/null
     if [ $? -ne 0 ]; then
